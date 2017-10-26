@@ -1,0 +1,18 @@
+include index
+
+block content
+ .container
+  form(name='frm_contact',method='post',action='/contact-us')
+   .form-group First name
+   input.form-control(name='first_name',type='text',id='first_name',placeholder='First Name',required)
+   .form-group Last Name
+   input.form-control(name='last_name',type='text',id='last_name',placeholder='Last Name',required)
+   .form-group Email
+   input.form-control(name='email',type='email',id='email',placeholder='Email',required)
+   .form-group Phone
+   input.form-control(name='phone',type='text',id='phone',placeholder='Phone Number',required)
+   .form-group Message
+   textarea.form-control(name='message',id='message',placeholder='Message',required)
+   button.btn-bt-default(type='submit') Send
+footer
+p © Company 2017
